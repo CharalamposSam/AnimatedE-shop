@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detailsCss.css">
+    <title>Details</title>
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            COMPANY NAME
+        </div>
+        <ul>
+            <li>Category</li>
+            <li>Style</li>
+            <li>Favorite <i class="far fa-heart"></i></li>
+            <li>Bag <i class="fas fa-shopping-bag"></i></li>
+            <li>Contact</li>
+            <li>About</li>
+            <li><i class="fas fa-search"></i></li>
+        </ul>
+        <div class="social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-google-plus-square"></i>
+            <i class="fab fa-instagram"></i>
+            <div class="socialBar socialBar1"></div>
+            <div class="socialBar socialBar2"></div>
+            <div class="socialBar socialBar3"></div>
+        </div>
+    </aside>
+    <div class="main">
+        <div class="image">
+            <img src="images/hat.png" alt="hat">
+        </div>
+        <div class="right">
+            <div class="closeButton"><i class="fas fa-times"></i></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="five"></div>
+            <div class="six">
+                <div class="emptyBox"></div>
+                <div class="emptyBox"></div>
+            </div>
+            <div class="sevenToTen">
+                <div class="seven"></div>
+                <div class="eight"></div>
+                <div class="nine"></div>
+                <div class="ten"></div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="whiteBox whiteBox1"></div>
+            <div class="whiteBox whiteBox2"></div>
+            <div class="whiteBox whiteBox3"></div>
+            <div class="whiteBox whiteBox4"></div>
+            <div class="whiteBox whiteBox5"></div>
+        </div>
+    </div>
+</body>
+<script>
+    const image = document.querySelector(".image").style
+    const one = document.querySelector(".one").style
+    const two = document.querySelector(".two").style
+    const three = document.querySelector(".three").style
+    const four = document.querySelector(".four").style
+    const five = document.querySelector(".five").style
+    const six = document.querySelector(".six").style
+    const seven = document.querySelector(".seven").style
+    const eight = document.querySelector(".eight").style
+    const nine = document.querySelector(".nine").style
+    const ten = document.querySelector(".ten").style
+    const whiteBox1 = document.querySelector(".whiteBox1").style
+    const whiteBox2 = document.querySelector(".whiteBox2").style
+    const whiteBox3 = document.querySelector(".whiteBox3").style
+    const whiteBox4 = document.querySelector(".whiteBox4").style
+    const whiteBox5 = document.querySelector(".whiteBox5").style
+    const closeButton = document.querySelector(".closeButton")
+    
+
+    
+    window.addEventListener("load", animFunction)
+
+    function animFunction(){
+        image.transform = "scale(1)"
+        one.transform = "scale(1)"
+        two.transform = "scale(1)"
+        three.transform = "scale(1)"
+        four.marginLeft = "15px"
+        five.transform = "scale(1)"
+        six.marginLeft = "15px"
+        seven.transform = "scale(1)"
+        eight.transform = "scale(1)"
+        nine.transform = "scale(1)"
+        ten.transform = "scale(1)"
+        whiteBox1.transform = "scale(1)"
+        whiteBox2.transform = "scale(1)"
+        whiteBox3.transform = "scale(1)"
+        whiteBox4.transform = "scale(1)"
+        whiteBox5.transform = "scale(1)"
+        closeButton.style.right = "20px"
+
+
+        image.transition = "transform .5s"
+        one.transition = "transform .5s .1s"
+        two.transition = "transform .5s .2s"
+        three.transition = "transform .5s .3s"
+        four.transition = "margin-left .5s .4s"
+        five.transition = "transform .5s .5s"
+        six.transition = "margin-left .5s .5s"
+        seven.transition = "transform .5s .6s"
+        eight.transition = "transform .5s .63s"
+        nine.transition = "transform .5s .66s"
+        ten.transition = "transform .5s .7s"
+        whiteBox1.transition = "transform .4s .1s"
+        whiteBox2.transition = "transform .4s .15s"
+        whiteBox3.transition = "transform .4s .2s"
+        whiteBox4.transition = "transform .4s .25s"
+        whiteBox5.transition = "transform .4s .3s"
+        closeButton.style.transition = "right .4s .15s"
+    }
+
+closeButton.addEventListener("click", () => {
+        image.transform = "scale(.5)"
+        one.transform = "scaleX(0)"
+        two.transform = "scaleX(0)"
+        three.transform = "scaleX(0)"
+        four.marginLeft = "-150px"
+        five.transform = "scaleX(0)"
+        six.marginLeft = "-300px"
+        seven.transform = "scaleX(0)"
+        eight.transform = "scaleX(0)"
+        nine.transform = "scaleX(0)"
+        ten.transform = "scaleX(0)"
+        whiteBox1.transform = "scaleY(0)"
+        whiteBox2.transform = "scaleY(0)"
+        whiteBox3.transform = "scaleY(0)"
+        whiteBox4.transform = "scaleY(0)"
+        whiteBox5.transform = "scaleY(0)"
+        closeButton.style.right = "-30px"
+
+        image.transformOrigin = "0 0"
+        one.transformOrigin = "0"
+        two.transformOrigin = "0"
+        three.transformOrigin = "0"
+        five.transformOrigin = "0"
+        seven.transformOrigin = "0"
+        eight.transformOrigin = "0"
+        nine.transformOrigin = "0"
+        ten.transformOrigin = "0"
+        whiteBox1.transformOrigin = "top"
+        whiteBox2.transformOrigin = "top"
+        whiteBox3.transformOrigin = "top"
+        whiteBox4.transformOrigin = "top"
+        whiteBox5.transformOrigin = "top"
+
+
+        image.transition = "transform .5s .7s"
+        one.transition = "transform .5s .6s"
+        two.transition = "transform .5s .5s"
+        three.transition = "transform .5s .4s"
+        four.transition = "margin-left .5s .3s"
+        five.transition = "transform .5s .2s"
+        six.transition = "margin-left .5s .1s"
+        seven.transition = "transform .5s .09s"
+        eight.transition = "transform .5s .06s"
+        nine.transition = "transform .5s .03s"
+        ten.transition = "transform .5s"
+        whiteBox1.transition = "transform .4s .3s"
+        whiteBox2.transition = "transform .4s .25s"
+        whiteBox3.transition = "transform .4s .2s"
+        whiteBox4.transition = "transform .4s .15s"
+        whiteBox5.transition = "transform .4s .1s"
+        closeButton.style.transition = "right .4s .15s"
+
+
+
+setTimeout(goBack, 1100)
+})
+
+
+
+
+    function goBack() {
+    window.history.back();
+}
+</script>
+</html>
